@@ -6,19 +6,24 @@ The pippline is designed for operational climate services, enabling seamless int
 
 ## ⚙️ Key Features
 ✅ Works directly with hourly / 3-hourly / 6-hourly NetCDF
+
 ✅ Automatically builds climatology from historical data
-✅ Supports ERA5, ERA5-Land, CHIRPS, SEAS5, NMME, Open-Meteo
+
+✅ Supports ERA5, ERA5-Land, CHIRPS, SEAS5, NMME, ECMWF_AIF, WeatherNEXT,..
+
 ✅ Computes complete agro-climate index suite
+
 ✅ Generates API-ready outputs
+
 ✅ Scalable to continental (Africa-wide) deployment
+
 ✅ Designed for operational advisory systems
 
-##Agro-Climate Indices
+## Agro-Climate Indices
 
-All indices are derived dynamically from raw climate data.
+All indices are derived dynamically from bias-corrected forecast climate data.
 
 ### Crop Indices
-
 
 | Index                   | Equation / Logic         | Unit    | Interpretation           |
 | ----------------------- | ------------------------ | ------- | ------------------------ |
@@ -155,7 +160,6 @@ It successfully produced NetCDF and API-ready JSONL outputs.
 
 #👤 Author
 
-Jemal Ahmed
-Lead Climate Data Scientist
+Jemal S. Ahmed
 Alliance of Bioversity International & CIAT (CGIAR Climate Action)
 📧 J.Ahmed@cgiar.org
