@@ -1,0 +1,19 @@
+[project]
+name = "agroclimate-indices"
+version = "0.1.0"
+description = "Operational crop, livestock, and integrated agro-climate indices from raw forecast and historical NetCDF."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "xarray",
+  "dask",
+  "netcdf4",
+  "h5netcdf",
+  "scipy",
+  "pyyaml",
+  "zarr"
+]
+
+[project.scripts]
+agroclimate-indices = "agroclimate_indices.run_pipeline:main"

@@ -1,0 +1,48 @@
+baseline:
+  start: "1991-01-01"
+  end: "2020-12-31"
+
+rainfall:
+  dry_day_mm: 1.0
+  wet_day_mm: 1.0
+  heavy_rain_mm: 20.0
+  very_heavy_rain_mm: 50.0
+  onset_total_mm: 25.0
+  onset_window_days: 7
+  onset_search_start_doy: 60
+  onset_search_end_doy: 250
+  false_start_check_days: 30
+  false_start_dry_spell_days: 7
+  cessation_search_start_doy: 220
+  cessation_water_balance_threshold_mm: 0.0
+
+crop:
+  tbase_c: 10.0
+  heat_stress_tmax_c: 35.0
+  cold_stress_tmin_c: 5.0
+  kc_default: 1.0
+  wind_risk_ms: 8.0
+
+livestock:
+  thi_mild: 68.0
+  thi_moderate: 72.0
+  thi_severe: 78.0
+  thi_emergency: 84.0
+  night_recovery_tmin_c: 24.0
+  cold_stress_tmin_c: 5.0
+  baseline_water_litre_per_day: 40.0
+
+integrated_weights:
+  agro_pastoral_drought_risk:
+    spei: 0.35
+    rainfall_deficit: 0.25
+    dry_spell: 0.20
+    soil_moisture_deficit: 0.20
+  feed_water_stress_index:
+    pasture_drought: 0.40
+    surface_water_stress: 0.30
+    heat_stress: 0.30
+  crop_livestock_livelihood_stress_score:
+    crop_water_stress: 0.40
+    pasture_stress: 0.35
+    heat_stress: 0.25

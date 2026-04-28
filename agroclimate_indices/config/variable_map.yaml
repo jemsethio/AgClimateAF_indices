@@ -1,0 +1,30 @@
+precipitation:
+  candidates: [precipitation, total_precipitation, tp, pr, rainfall, rain, prcp]
+  target_unit: mm
+temperature_2m_max:
+  candidates: [temperature_2m_max, tmax, mx2t, tasmax]
+  target_unit: degC
+temperature_2m_min:
+  candidates: [temperature_2m_min, tmin, mn2t, tasmin]
+  target_unit: degC
+temperature_2m_mean:
+  candidates: [temperature_2m_mean, temperature_2m, t2m, tas, tmean]
+  target_unit: degC
+relative_humidity_2m:
+  candidates: [relative_humidity_2m, rh, r, hurs]
+  target_unit: percent
+wind_speed_10m:
+  candidates: [wind_speed_10m, wind_speed, wind, si10, sfcWind]
+  target_unit: m s-1
+shortwave_radiation:
+  candidates: [shortwave_radiation, surface_solar_radiation_downwards, ssrd, rsds, srad]
+  target_unit: MJ m-2 day-1
+surface_pressure:
+  candidates: [surface_pressure, sp, ps]
+  target_unit: kPa
+soil_moisture:
+  candidates: [soil_moisture, swvl1, soil_moisture_0_to_7cm, sm]
+  target_unit: m3 m-3
+elevation:
+  candidates: [elevation, orography, z]
+  target_unit: m
