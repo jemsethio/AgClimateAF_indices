@@ -51,24 +51,6 @@ All indices are derived dynamically from bias-corrected forecast climate data.
 | Wind Risk               | Wind ≥ threshold         | days    | Lodging risk             |
 
 ### Livestock Indices
-| Index                | Equation / Logic           | Unit     | Interpretation      |
-| -------------------- | -------------------------- | -------- | ------------------- |
-| THI                  | 0.8T + RH(T−14.4) + 46.4   | index    | Heat stress         |
-| THI Class            | Threshold categories       | class    | Stress level        |
-| Heat Duration        | Consecutive THI exceedance | days     | Persistence         |
-| Night Recovery       | High Tmin/THI              | days     | Poor recovery       |
-| Water Demand         | Baseline × f(THI)          | relative | Drinking need       |
-| Pasture Rainfall     | Rolling anomaly            | %        | Forage availability |
-| Forage Growth        | f(P, SM, T)                | 0–1      | Grazing potential   |
-| Pasture Drought      | Combined stress            | 0–1      | Feed scarcity       |
-| Cold Stress          | Tmin threshold             | days     | Cold exposure       |
-| Wind Chill           | f(T, wind)                 | index    | Exposure risk       |
-| Mud/Wetness          | Wet spells + rain          | days     | Mobility risk       |
-| Vector Proxy         | T + RH + rainfall          | 0–1      | Disease risk        |
-| Surface Water Stress | P deficit + ET₀            | 0–1      | Water pressure      |
-| Dust Risk            | Dry + wind                 | days     | Respiratory risk    |
-
-### Livestock Indices
 
 | Index                | Equation / Logic           | Unit     | Interpretation      |
 | -------------------- | -------------------------- | -------- | ------------------- |
